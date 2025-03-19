@@ -1,0 +1,57 @@
+@mixin flex($direction, $align, $justify, $gap) {
+	display: flex;
+	flex-direction: $direction;
+	align-items: $align;
+	justify-content: $justify;
+	gap: $gap;
+}
+
+@mixin paragrafo18 {
+	font-size: 1.8rem;
+	font-weight: 400;
+	letter-spacing: -0.05rem;
+	line-height: 150%;
+}
+
+@mixin paragrafo14 {
+	font-size: 1.4rem;
+	font-weight: 400;
+	letter-spacing: -0.05rem;
+	line-height: 150%;
+}
+
+// Responsividade
+$breakpoints: (
+	'laptop': 1200px,
+	'tablet': 991px,
+	'mobile': 563px,
+);
+
+@mixin responsivo($breakpoint-name) {
+	@if map-has-key($breakpoints, $breakpoint-name) {
+		@media (max-width: map-get($breakpoints, $breakpoint-name)) {
+			@content;
+		}
+	} @else {
+		@warn "Este breakpoint que foi definido não existe!";
+	}
+
+	/*
+		Como executar o breakpoint.
+		@include responsivo(laptop) {
+			color: red;
+		}
+		@include responsivo(tablet) {
+			color: blue;
+		}
+		@include responsivo(mobile) {
+			color: yellow;
+		}
+	*/
+}
+
+@mixin resolucao($largura) {
+	@media (max-width: $largura) {
+		@content;
+	}
+}
