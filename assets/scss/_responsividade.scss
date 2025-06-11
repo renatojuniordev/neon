@@ -78,7 +78,7 @@ header {
 	@include resolucao(991px) {
 		height: 89.1rem;
 		background-size: cover;
-		padding-top: 12.4rem;			
+		padding-top: 12.4rem;					
 	}
 
 	.container {
@@ -122,16 +122,15 @@ header {
 			
 			ul {
 				@include resolucao(1090px) {
-					margin-top: 0;
-					flex-flow: column wrap;
-					justify-content: flex-start;
-					align-items: flex-start;
-					max-width: 300px;
+					margin-top: 0;					
 					gap: 8px;
 				}
 
-				@include resolucao(480px) {
-					max-width: 100%;
+				@include resolucao(590px) {					
+					flex-flow: column wrap;
+					justify-content: flex-start;
+					align-items: flex-start;	
+					max-width: 300px;				
 				}
 
 				li {				
