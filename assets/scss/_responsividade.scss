@@ -77,7 +77,8 @@ header {
 
 	@include resolucao(991px) {
 		height: 89.1rem;
-		background-size: cover;			
+		background-size: cover;
+		padding-top: 12.4rem;			
 	}
 
 	.container {
@@ -111,19 +112,32 @@ header {
 				}
 
 				@include resolucao(994px) {
-					font-size: 4.8rem;
+					font-size: 4.2rem;
+				}
+
+				@include resolucao(480px) {
+					font-size: 3.2rem;
 				}
 			}	
 			
 			ul {
 				@include resolucao(1090px) {
-					margin-top: 2.4rem;
+					margin-top: 0;
+					flex-flow: column wrap;
+					justify-content: flex-start;
+					align-items: flex-start;
+					max-width: 300px;
+					gap: 8px;
 				}
 
-				li {
+				@include resolucao(480px) {
+					max-width: 100%;
+				}
+
+				li {				
 					.text {
 						@include resolucao(994px) {
-							text-align: left;
+							text-align: left;							
 						}
 					}
 				}
