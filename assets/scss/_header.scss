@@ -8,24 +8,24 @@ header {
 	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 
 	.container {
-		@include flex(row, center, space-between, 8px);
+		@include m.flex(row, center, space-between, 8px);
 
 		nav {
-			@include flex(row, center, flex-end, 59px);
+			@include m.flex(row, center, flex-end, 59px);
 
 			ul {
-				@include flex(row, center, center, 48px);
+				@include m.flex(row, center, center, 48px);
 
 				li {
 					a {
-						color: $brand-white;
+						color: v.$brand-white;
 						font-family: Poppins, sans-serif;
 						font-size: 1.6rem;
 						font-weight: 500;
 						line-height: 125%;
 						transition: color 0.3s ease;
 						&:hover {
-							color: $brand-yellow;
+							color: v.$brand-yellow;
 						}
 					}
 				}

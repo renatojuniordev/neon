@@ -6,7 +6,7 @@
 		}
 	}
 
-	background-color: $brand-yellow;
+	background-color: #ffc800;
 
 	&:hover {
 		background-color: #ffdc5c;
@@ -16,32 +16,32 @@
 .button-secondary {
 	.button-secondary-wrap {
 		.button-secondary-text {
-			color: $brand-light-blue;
+			color: v.$brand-light-blue;
 			transition: all 0.3s ease;
 		}
 	}
 
 	background-color: transparent;
-	border: 1px solid $brand-light-blue;
+	border: 1px solid v.$brand-light-blue;
 
 	&:hover {
-		background-color: $brand-light-blue;
+		background-color: v.$brand-light-blue;
 
 		.button-secondary-text {
-			color: $brand-white;
+			color: v.$brand-white;
 		}
 	}
 
 	// Quando adicionar a classe white
 	&.white {
 		background-color: transparent;
-		border: 1px solid $brand-white;
+		border: 1px solid v.$brand-white;
 		.button-secondary-text {
-			color: $brand-white;
+			color: v.$brand-white;
 		}
 
 		&:hover {
-			background-color: $brand-white;
+			background-color: v.$brand-white;
 			.button-secondary-text {
 				color: #01c7df;
 			}
@@ -59,7 +59,7 @@
 
 .button-primary-wrap,
 .button-secondary-wrap {
-	@include flex(row, center, center, 8px);
+	@include m.flex(row, center, center, 8px);
 }
 
 .button-primary-text,

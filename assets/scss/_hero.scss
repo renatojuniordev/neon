@@ -5,17 +5,17 @@
 	padding-top: 175px;
 
 	.container {
-		@include flex(row, flex-start, space-between, 0px);
+		@include m.flex(row, flex-start, space-between, 0px);
 	}
 
 	.s-hero-text {
 		width: 100%;
 		max-width: 68.4rem;
-		@include flex(column, flex-start, flex-start, 32px);
+		@include m.flex(column, flex-start, flex-start, 32px);
 
 		.subtitle {
 			opacity: 0.8;
-			color: $brand-white;
+			color: v.$brand-white;
 			font-family: 'Poppins', sans-serif;
 			font-size: 2.4rem;
 			font-weight: 600;
@@ -24,18 +24,18 @@
 		}
 
 		h1 {
-			color: $brand-white;
+			color: v.$brand-white;
 		}
 
 		// Features
 		ul {
 			margin-top: 64px;
-			@include flex(row, center, space-between, 0px);
+			@include m.flex(row, center, space-between, 0px);
 			width: 100%;
 			max-width: 62.1rem;
 
 			li {
-				@include flex(row, center, center, 12px);
+				@include m.flex(row, center, center, 12px);
 				.icon {
 					width: 48px;
 					height: 48px;
@@ -46,13 +46,13 @@
 						rgba(53, 202, 226, 0) 100%
 					);
 					border-radius: 50%;
-					@include flex(row, center, center, 0px);
+					@include m.flex(row, center, center, 0px);
 					flex-shrink: 0;
 				}
 				.text {
 					font-size: 1.8rem;
 					font-weight: 400;
-					color: $brand-white;
+					color: v.$brand-white;
 				}
 			}
 		}
@@ -66,7 +66,7 @@
 		h2 {
 			margin-bottom: 67px;
 			text-align: center;
-			color: $brand-white;
+			color: v.$brand-white;
 			opacity: 0.4;
 			font-size: 4.8rem;
 			font-weight: 600;
@@ -104,19 +104,19 @@
 		}
 	}
 
-	@include resolucao(1440px) {
+	@include m.resolucao(1440px) {
 		.s-hero-images {
 			margin-right: -13.4rem;
 		}
 	}
 
-	@include resolucao(1366px) {
+	@include m.resolucao(1366px) {
 		.s-hero-images {
 			margin-right: -8rem;
 		}
 	}
 
-	@include resolucao(1050px) {
+	@include m.resolucao(1050px) {
 		padding-top: 140px;
 
 		.s-hero-text {

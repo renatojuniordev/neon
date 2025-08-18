@@ -1,19 +1,19 @@
 .footer {
-	background-color: $brand-blue;
+	background-color: v.$brand-blue;
 	.footer__top {
-		@include flex(row, center, space-between, 8px);
+		@include m.flex(row, center, space-between, 8px);
 		padding: 49px 0;
 		border-bottom: 2px solid rgba(73, 197, 253, 0.2);
 
 		.footer--redes-sociais {
-			@include flex(row, center, flex-end, 30px);
+			@include m.flex(row, center, flex-end, 30px);
 			span {
-				@include paragrafo14;
-				color: $brand-white;
+				@include m.paragrafo14;
+				color: v.$brand-white;
 				opacity: 0.7;
 			}
 			ul {
-				@include flex(row, center, center, 30px);
+				@include m.flex(row, center, center, 30px);
 				a {
 					transition: all 0.5s ease;
 					&:hover {
@@ -26,36 +26,36 @@
 
 	.footer__meio {
 		padding: 57px 0 62px;
-		@include flex(row, flex-start, space-between, 74px);
+		@include m.flex(row, flex-start, space-between, 74px);
 		border-bottom: 2px solid rgba(73, 197, 253, 0.2);
 
 		.footer__menus {
-			@include flex(row, flex-start, space-between, 8px);
+			@include m.flex(row, flex-start, space-between, 8px);
 			width: 100%;
 
 			.footer__menu--item {
-				@include flex(column, flex-start, flex-start, 25px);
+				@include m.flex(column, flex-start, flex-start, 25px);
 				h3 {
 					font-weight: 600;
 					font-size: 1.6rem;
-					color: $brand-white;
+					color: v.$brand-white;
 				}
 				ul {
-					@include flex(column, flex-start, flex-start, 25px);
+					@include m.flex(column, flex-start, flex-start, 25px);
 				}
 				a {
-					@include paragrafo14;
+					@include m.paragrafo14;
 					color: rgba(255, 255, 255, 0.7);
 					transition: color 0.3s ease;
 					&:hover {
-						color: $brand-white;
+						color: v.$brand-white;
 					}
 				}
 			}
 		}
 
 		.footer__cards {
-			@include flex(column, flex-start, flex-start, 24px);
+			@include m.flex(column, flex-start, flex-start, 24px);
 
 			a {
 				transition: all 0.5s ease;
@@ -63,27 +63,27 @@
 				border-radius: 6px;
 				&:hover {
 					transform: translateY(-5px);
-					border: 1px solid $brand-white;
+					border: 1px solid v.$brand-white;
 				}
 			}
 
 			.footer__cards--card {
 				min-width: 280px;
-				@include flex(row, center, flex-start, 24px);
+				@include m.flex(row, center, flex-start, 24px);
 				background-color: rgba(0, 165, 240, 0.23);
 				border-radius: 6px;
 				padding: 25px;
 
 				.footer__cards--info {
-					@include flex(column, flex-start, flex-start, 4px);
+					@include m.flex(column, flex-start, flex-start, 4px);
 					h4 {
 						font-family: 'Inter', sans-serif;
 						font-weight: 700;
 						font-size: 1.4rem;
-						color: $brand-white;
+						color: v.$brand-white;
 					}
 					p {
-						@include paragrafo14;
+						@include m.paragrafo14;
 						color: rgba(255, 255, 255, 0.7);
 					}
 				}
@@ -93,11 +93,11 @@
 
 	.footer__bottom {
 		padding: 39px 0;
-		border-bottom: 4px solid $brand-yellow;
-		@include flex(row, flex-start, flex-start, 25px);
+		border-bottom: 4px solid v.$brand-yellow;
+		@include m.flex(row, flex-start, flex-start, 25px);
 		p {
 			color: rgba(255, 255, 255, 0.8);
-			@include paragrafo14;
+			@include m.paragrafo14;
 			width: 100%;
 			max-width: 655px;
 		}

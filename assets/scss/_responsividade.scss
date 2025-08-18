@@ -1,15 +1,15 @@
 html {
-	@include resolucao(1300px) {
+	@include m.resolucao(1300px) {
 		font-size: 58%;
 	}
 
-	@include resolucao(991px) {
-		font-size: 62.5%;		
+	@include m.resolucao(991px) {
+		font-size: 62.5%;
 	}
 }
 
 header {
-	@include resolucao(1090px) {
+	@include m.resolucao(1090px) {
 		.container {
 			nav {
 				// display: none;
@@ -21,7 +21,7 @@ header {
 		}
 	}
 
-	@include resolucao(994px) {
+	@include m.resolucao(994px) {
 		.container {
 			.logo {
 				max-width: 108px;
@@ -37,7 +37,7 @@ header {
 		}
 	}
 
-	@include resolucao(940px) {
+	@include m.resolucao(940px) {
 		.container {
 			nav {
 				ul {
@@ -50,7 +50,7 @@ header {
 		}
 	}
 
-	@include resolucao(480px) {
+	@include m.resolucao(480px) {
 		height: 73px;
 		.container {
 			nav {
@@ -63,89 +63,87 @@ header {
 }
 
 .s-hero {
-	@include resolucao(1440px) {
+	@include m.resolucao(1440px) {
 		padding-top: 13.2rem;
 	}
 
-	@include resolucao(1280px) {
-		padding-top: 15.2rem;		
+	@include m.resolucao(1280px) {
+		padding-top: 15.2rem;
 	}
 
-	@include resolucao(1090px) {
-		height: 65.6rem;		
+	@include m.resolucao(1090px) {
+		height: 65.6rem;
 	}
 
-	@include resolucao(991px) {
+	@include m.resolucao(991px) {
 		height: 89.1rem;
 		background-size: cover;
-		padding-top: 12.4rem;					
+		padding-top: 12.4rem;
 	}
 
 	.container {
-		@include resolucao(994px) {
+		@include m.resolucao(994px) {
 			flex-direction: column;
 			align-items: center;
 			gap: 50px;
 		}
 
 		.s-hero-text {
-			@include resolucao(1090px) {
+			@include m.resolucao(1090px) {
 				max-width: 100%;
-				text-align: center;
-				justify-content: center;
-				align-items: center;
+				justify-content: start;
+				align-items: start;
 			}
 
-			@include resolucao(994px) {				
-				max-width: 685px;				
+			@include m.resolucao(994px) {
+				max-width: 685px;
 			}
 
 			.subtitle {
-				@include resolucao(1090px) {
+				@include m.resolucao(1090px) {
 					font-size: 1.8rem;
 				}
 			}
 
 			h1 {
-				@include resolucao(1090px) {
+				@include m.resolucao(1090px) {
 					font-size: 5.6rem;
 				}
 
-				@include resolucao(994px) {
+				@include m.resolucao(994px) {
 					font-size: 4.2rem;
 				}
 
-				@include resolucao(480px) {
+				@include m.resolucao(480px) {
 					font-size: 3.2rem;
 				}
-			}	
-			
+			}
+
 			ul {
-				@include resolucao(1090px) {
-					margin-top: 0;					
+				@include m.resolucao(1090px) {
+					margin-top: 0;
 					gap: 8px;
 				}
 
-				@include resolucao(590px) {					
+				@include m.resolucao(590px) {
 					flex-flow: column wrap;
 					justify-content: flex-start;
-					align-items: flex-start;	
-					max-width: 300px;				
+					align-items: flex-start;
+					max-width: 300px;
 				}
 
-				li {				
+				li {
 					.text {
-						@include resolucao(994px) {
-							text-align: left;							
+						@include m.resolucao(994px) {
+							text-align: left;
 						}
 					}
 				}
 			}
-
 		}
 
 		.s-hero-images {
-			@include resolucao(994px) {
+			@include m.resolucao(994px) {
 				width: 100%;
 				margin: 0 auto;
 				display: flex;
@@ -156,34 +154,34 @@ header {
 			}
 
 			h2 {
-				@include resolucao(994px) {
+				@include m.resolucao(994px) {
 					font-size: 3.6rem;
 				}
 			}
 		}
 
 		.image {
-			@include resolucao(1090px) {
+			@include m.resolucao(1090px) {
 				top: -7.1rem;
 			}
 
-			@include resolucao(994px) {
+			@include m.resolucao(994px) {
 				max-width: 51.1rem;
 				height: 42.4rem;
 				margin: 0 auto;
 			}
 
 			.circle {
-				@include resolucao(1090px) {
+				@include m.resolucao(1090px) {
 					right: 83px;
 					max-width: 48.3rem;
 				}
 
-				@include resolucao(1050px) {					
+				@include m.resolucao(1050px) {
 					max-width: 45.3rem;
 				}
 
-				@include resolucao(994px) {
+				@include m.resolucao(994px) {
 					max-width: 42.9rem;
 					top: 0;
 					right: 13px;
@@ -191,7 +189,7 @@ header {
 			}
 
 			.card-front {
-				@include resolucao(994px) {
+				@include m.resolucao(994px) {
 					max-width: 34rem;
 					left: 0;
 					top: 0;
@@ -199,20 +197,20 @@ header {
 			}
 
 			.card-back {
-				@include resolucao(1440px) {
+				@include m.resolucao(1440px) {
 					max-width: 43.5rem;
 					bottom: -31px;
 				}
 
-				@include resolucao(1090px) {
+				@include m.resolucao(1090px) {
 					max-width: 38.5rem;
 					bottom: 12px;
 				}
 
-				@include resolucao(994px) {
+				@include m.resolucao(994px) {
 					max-width: 27.4rem;
 					right: 29px;
-        			bottom: 76px;
+					bottom: 76px;
 				}
 			}
 		}

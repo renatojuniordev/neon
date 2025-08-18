@@ -5,10 +5,10 @@
 	padding: 37px 32px;
 	background-color: rgba(241, 240, 245, 0.55);
 	border-radius: 8px;
-	@include flex(column, flex-start, flex-start, 21px);
+	@include m.flex(column, flex-start, flex-start, 21px);
 
 	.user {
-		@include flex(row, center, space-between, 8px);
+		@include m.flex(row, center, space-between, 8px);
 		width: 100%;
 		strong {
 			font-family: 'Poppins', sans-serif;
@@ -16,11 +16,11 @@
 			font-weight: 600;
 			line-height: 112%;
 			letter-spacing: -1px;
-			color: $gray-500;
+			color: v.$gray-500;
 		}
 	}
 
 	p {
-		@include paragrafo18;
+		@include m.paragrafo18;
 	}
 }

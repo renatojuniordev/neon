@@ -2,7 +2,7 @@
 	padding-top: 12.9rem;
 
 	.container {
-		@include flex(row, flex-start, flex-start, 139px);
+		@include m.flex(row, flex-start, flex-start, 139px);
 	}
 
 	.left-area {
@@ -29,14 +29,14 @@
 
 		.text {
 			.icon {
-				@include flex(column, center, center, 21px);
+				@include m.flex(column, center, center, 21px);
 				margin-bottom: 31px;
 			}
 
 			.info-txt {
 				width: 100%;
 				max-width: 270px;
-				@include flex(column, center, center, 4px);
+				@include m.flex(column, center, center, 4px);
 				text-align: center;
 				margin-bottom: 25px;
 
@@ -45,33 +45,33 @@
 					font-weight: 500;
 					line-height: 150%;
 					letter-spacing: -0.05rem;
-					color: $gray-600;
+					color: v.$gray-600;
 				}
 
 				p {
-					color: $gray-400;
+					color: v.$gray-400;
 					opacity: 0.8;
 				}
 			}
 
 			.botoes-app-download {
-				@include flex(column, center, center, 13px);
+				@include m.flex(column, center, center, 13px);
 			}
 		}
 	}
 
 	.right-area {
 		width: 100%;
-		@include flex(column, flex-start, flex-start, 144px);
+		@include m.flex(column, flex-start, flex-start, 144px);
 
 		.cards {
 			width: 100%;
-			@include flex(column, flex-start, flex-start, 16px);
+			@include m.flex(column, flex-start, flex-start, 16px);
 
 			h2 {
 				width: 100%;
 				max-width: 488px;
-				color: $gray-600;
+				color: v.$gray-600;
 				font-size: 4rem;
 				font-weight: 700;
 				line-height: 112%; /* 4.48rem */
@@ -80,19 +80,19 @@
 
 			.cards-area {
 				width: 100%;
-				@include flex(column, flex-start, flex-start, 0px);
+				@include m.flex(column, flex-start, flex-start, 0px);
 
 				.card-area {
 					width: 100%;
 					height: 12.8rem;
-					@include flex(row, center, space-between, 8px);
+					@include m.flex(row, center, space-between, 8px);
 					border-bottom: 1px solid #e1e0e7;
 
 					.card-area--textos {
-						@include flex(row, center, flex-start, 43px);
+						@include m.flex(row, center, flex-start, 43px);
 
 						h3 {
-							color: $gray-400;
+							color: v.$gray-400;
 							font-size: 2.4rem;
 							font-weight: 600;
 							line-height: 150%; /* 3.6rem */
@@ -100,7 +100,7 @@
 						}
 
 						p {
-							color: $gray-300;
+							color: v.$gray-300;
 							font-size: 1.8rem;
 							font-weight: 400;
 							line-height: 150%; /* 2.7rem */
@@ -110,7 +110,7 @@
 			}
 
 			a {
-				color: $brand-blue;
+				color: v.$brand-blue;
 				font-family: 'Poppins', sans-serif;
 				font-size: 1.6rem;
 				font-weight: 500;
@@ -120,14 +120,14 @@
 				transition: color 0.3s ease;
 				position: relative;
 				&:hover {
-					color: $brand-yellow;
+					color: v.$brand-yellow;
 				}
 				&::after {
 					content: '';
 					position: absolute;
 					width: 1rem;
 					bottom: 0px;
-					border-bottom: 2px solid $brand-yellow;
+					border-bottom: 2px solid v.$brand-yellow;
 					margin-left: 8px;
 				}
 			}
@@ -136,7 +136,7 @@
 		.neon-pejota {
 			width: 100%;
 			height: 410px;
-			@include flex(row, center, space-between, 91px);
+			@include m.flex(row, center, space-between, 91px);
 			background: url("../images/svg/background-section-card-pejota.svg") no-repeat center center;
 			border-radius: 12px;
 			padding: 0 59px;
@@ -145,15 +145,15 @@
 			.neon-pejota--elementos {
 				width: 100%;
 				max-width: 327px;
-				@include flex(column, flex-start, flex-start, 33px);
+				@include m.flex(column, flex-start, flex-start, 33px);
 
 				.neon-pejota-elementos--textos {
-					@include flex(column, flex-start, flex-start, 8px);
+					@include m.flex(column, flex-start, flex-start, 8px);
 
 					h2,
 					h3,
 					p {
-						color: $brand-white;
+						color: v.$brand-white;
 					}
 
 					h2 {
@@ -170,7 +170,7 @@
 				}
 
 				.neon-pejota-elementos--cta {
-					@include flex(row, center, flex-start, 16px);
+					@include m.flex(row, center, flex-start, 16px);
 				}
 			}
 
@@ -205,14 +205,14 @@
 		align-items: flex-end;
 
 		h2 {
-			color: $gray-600;
+			color: v.$gray-600;
 			font-weight: 700;
 
 			span {
 				display: block;
 				font-size: 4rem;
 				font-weight: 700;
-				color: $gray-200;
+				color: v.$gray-200;
 			}
 		}
 
@@ -221,7 +221,7 @@
 			width: auto;
 
 			.swiper-pagination-bullet {
-				background-color: $brand-yellow;
+				background-color: v.$brand-yellow;
 				opacity: 0.3;
 				width: 9px;
 				height: 7px;
@@ -231,7 +231,7 @@
 					margin-left: 4px;
 				}
 				&-active {
-					background-color: $brand-yellow;
+					background-color: v.$brand-yellow;
 					opacity: 1;
 					width: 17px;
 				}
@@ -247,13 +247,13 @@
 .s-conta-digital {
 	padding: 127px 0 85px;
 	.container {
-		@include flex(row, center, space-between, 0px);
+		@include m.flex(row, center, space-between, 0px);
 	}
 
 	.text {
 		max-width: 542px;
 		h2 {
-			color: $gray-600;
+			color: v.$gray-600;
 			margin-bottom: 45px;
 			span {
 				display: block;
@@ -276,7 +276,7 @@
 				.icon {
 					width: 45px;
 					height: 45px;
-					background-color: $brand-green-light;
+					background-color: v.$brand-green-light;
 					border-radius: 8px;
 					display: flex;
 					justify-content: center;
@@ -290,10 +290,10 @@
 					gap: 4px;
 					h3 {
 						font-size: 2rem;
-						color: $gray-400;
+						color: v.$gray-400;
 					}
 					p {
-						color: $gray-300;
+						color: v.$gray-300;
 						font-size: 1.8rem;
 					}
 				}
