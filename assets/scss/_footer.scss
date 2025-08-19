@@ -92,6 +92,29 @@
 				}
 			}
 		}
+
+		@include m.resolucao(768px) {
+			@include m.flex(column, center, center, 0);
+			position: relative;
+			width: 100%;
+
+			.footer__menus {
+				width: 100%;
+				flex-wrap: wrap;
+				justify-content: start;
+				gap: 56px 0;
+
+				.footer__menu--item {
+					flex: 0 0 33%;
+				}
+			}
+
+			.footer__cards {
+				position: absolute;
+				bottom: 53px;
+				right: 0;
+			}
+		}
 	}
 
 	.footer__bottom {
@@ -103,6 +126,11 @@
 			@include m.paragrafo14;
 			width: 100%;
 			max-width: 655px;
+		}
+
+		@include m.resolucao(768px) {
+			@include m.flex(column, center, center, 12px);
+			text-align: center;
 		}
 	}
 }

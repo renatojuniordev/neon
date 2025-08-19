@@ -54,7 +54,7 @@ header {
 	}
 
 	@include m.resolucao(480px) {
-		height: 73px;
+		height: 100px;
 		.container {
 			nav {
 				.button-secondary {
@@ -81,7 +81,15 @@ header {
 	@include m.resolucao(991px) {
 		height: 89.1rem;
 		background-size: cover;
-		padding-top: 12.4rem;
+		padding-top: 15rem;
+	}
+
+	@include m.resolucao(768px) {
+		height: 82rem;
+	}
+
+	@include m.resolucao(600px) {
+		height: 100%;
 	}
 
 	.container {
@@ -102,6 +110,16 @@ header {
 				max-width: 685px;
 			}
 
+			@include m.resolucao(768px) {
+				text-align: center;
+				align-items: center;
+				gap: 24px;
+			}
+
+			@include m.resolucao(600px) {
+				max-width: 32.1rem;
+			}
+
 			.subtitle {
 				@include m.resolucao(1090px) {
 					font-size: 1.8rem;
@@ -114,7 +132,8 @@ header {
 				}
 
 				@include m.resolucao(994px) {
-					font-size: 4.2rem;
+					font-size: 4.8rem;
+					line-height: 112%;
 				}
 
 				@include m.resolucao(480px) {
@@ -137,6 +156,9 @@ header {
 
 				li {
 					.text {
+						@include m.resolucao(1090px) {
+							font-size: 1.6rem;
+						}
 						@include m.resolucao(994px) {
 							text-align: left;
 						}
@@ -176,7 +198,6 @@ header {
 
 			.circle {
 				@include m.resolucao(1090px) {
-					right: 83px;
 					max-width: 48.3rem;
 				}
 
@@ -187,7 +208,6 @@ header {
 				@include m.resolucao(994px) {
 					max-width: 42.9rem;
 					top: 0;
-					right: 13px;
 				}
 			}
 
@@ -214,6 +234,10 @@ header {
 					max-width: 27.4rem;
 					right: 29px;
 					bottom: 76px;
+				}
+
+				@include m.resolucao(768px) {
+					bottom: 48px;
 				}
 			}
 		}

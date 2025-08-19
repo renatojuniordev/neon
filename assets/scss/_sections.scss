@@ -6,10 +6,22 @@
 
 	.container {
 		@include m.flex(row, flex-start, flex-start, 139px);
+		@include m.resolucao(768px) {
+			@include m.flex(column-reverse, center, center, 0px);
+			gap: 80px;
+		}
 	}
 
 	.left-area {
 		max-width: 27.7rem;
+		@include m.resolucao(768px) {
+			max-width: 100%;
+			@include m.flex(row, center, space-between, 0px);
+			@include m.resolucao(768px) {
+				width: 100%;
+				padding: 0 48px;
+			}
+		}
 
 		.ilustra-mockup {
 			width: 100%;
@@ -66,10 +78,19 @@
 	.right-area {
 		width: 100%;
 		@include m.flex(column, flex-start, flex-start, 144px);
+		@include m.resolucao(768px) {
+			align-items: center;
+			justify-content: center;
+			padding: 0 24px;
+			gap: 40px;
+		}
 
 		.cards {
 			width: 100%;
 			@include m.flex(column, flex-start, flex-start, 16px);
+			@include m.resolucao(768px) {
+				margin-top: 32px;
+			}
 
 			h2 {
 				width: 100%;
@@ -79,6 +100,11 @@
 				font-weight: 700;
 				line-height: 112%; /* 4.48rem */
 				letter-spacing: -0.1rem;
+				@include m.resolucao(768px) {
+					text-align: center;
+					max-width: 424px;
+					margin: 0 auto;
+				}
 			}
 
 			.cards-area {
@@ -140,10 +166,14 @@
 			width: 100%;
 			height: 410px;
 			@include m.flex(row, center, space-between, 91px);
-			background: url("../images/svg/background-section-card-pejota.svg") no-repeat center center;
+			background: url('../images/svg/background-section-card-pejota.svg') no-repeat center center;
 			border-radius: 12px;
 			padding: 0 59px;
 			position: relative;
+
+			@include m.resolucao(768px) {
+				margin-top: 17px;
+			}
 
 			.neon-pejota--elementos {
 				width: 100%;
@@ -186,6 +216,14 @@
 				img {
 					max-width: 341px;
 				}
+
+				@include m.resolucao(1090px) {
+					right: -138px;
+				}
+
+				@include m.resolucao(768px) {
+					right: -94px;
+				}
 			}
 
 			.cirulo-section-pejota {
@@ -219,6 +257,20 @@
 			}
 		}
 
+		// responsive
+		@include m.resolucao(768px) {
+			flex-direction: column;
+			align-items: center;
+			gap: 16px;
+
+			h2 {
+				text-align: center;
+				span {
+					font-size: 3.2rem;
+				}
+			}
+		}
+
 		.swiper-pagination {
 			position: relative;
 			width: auto;
@@ -244,6 +296,11 @@
 
 	.slide-depoimentos {
 		overflow: hidden;
+	}
+
+	// responsive
+	@include m.resolucao(768px) {
+		padding: 6.9rem 0;
 	}
 }
 
@@ -326,6 +383,45 @@
 				position: absolute;
 				bottom: 0;
 				right: 0;
+			}
+		}
+	}
+
+	// responsive
+	@include m.resolucao(768px) {
+		padding-top: 16px;
+
+		.container {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 78px;
+
+			.text {
+				text-align: center;
+			}
+
+			.image {
+				left: 0;
+				max-width: 100%;
+				margin: 0;
+
+				img:nth-child(1) {
+					position: absolute;					
+					left: 104px;					
+				}
+
+				img:nth-child(2) {
+					position: absolute;
+					top: 3.22px;
+					left: 344px;					
+				}
+
+				img:nth-child(3) {
+					right: 50%;
+					transform: translateX(50%);
+					max-width: 582px;
+				}
 			}
 		}
 	}
