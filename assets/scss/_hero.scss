@@ -90,6 +90,7 @@
 				left: 0;
 				z-index: 2;
 				max-width: 43.5rem;
+				animation: floating 6s infinite;
 			}
 
 			.card-back {
@@ -97,6 +98,7 @@
 				right: 43px;
 				z-index: 1;
 				max-width: 35.2rem;
+				animation: floating 6s .5s infinite;
 			}
 
 			.circle {
