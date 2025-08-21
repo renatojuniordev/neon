@@ -436,41 +436,43 @@ header {
 
 // Footer
 .footer {
-	.container {
-		.footer__top {
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			gap: 16px;
-			padding: 32px 0;
-
-			.footer--redes-sociais {
+	@include m.resolucao(600){
+		.container {
+			.footer__top {
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
 				gap: 16px;
+				padding: 32px 0;
+
+				.footer--redes-sociais {
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					gap: 16px;
+				}
 			}
-		}
 
-		.footer__meio {
-			gap: 32px;
-			align-items: start;
+			.footer__meio {
+				gap: 32px;
+				align-items: start;
 
-			.footer__menu--item {
-				flex: 0 0 50%
-			}
+				.footer__menu--item {
+					flex: 0 0 50%
+				}
 
-			.footer__cards {
-				position: relative;
-				bottom: 0;
-				width: 100%;		
-				
-				a {
-					width: 100%;
+				.footer__cards {
+					position: relative;
+					bottom: 0;
+					width: 100%;		
+					
+					a {
+						width: 100%;
 
-					.footer__cards--card {
-						justify-content: center;
-						width: inherit;
+						.footer__cards--card {
+							justify-content: center;
+							width: inherit;
+						}
 					}
 				}
 			}
